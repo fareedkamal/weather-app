@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="content" class="">
+        <div id="locImg" class="section left flex col ju">
+            <div class="loc-show flex al ju">
+                <div class="loc-icon"></div>
+                <div class="loc-show-text flex col ju">
+                    <p class="ts">Current Location</p>
+                    <p id="loc-value" class="tb"></p>
+                </div>
+            </div>
+            <div class="action-area flex al ju">
+                <form id="search-sec" class="flex al ju" autocomplete="off">
+                    <input id="se-inp" pattern="^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$" class="input-field" type="text" placeholder="Enter Location" required>
+                    <input type="submit" value="" class="btn search-btn">
+                </form>
+                <button class="btn gps-btn"></button>
+            </div>
+            <p id="se-error"class="hide">Hmm... that's wierd. Try typing a location belonging to Planet Earth </p>
+            
+            <footer class="footer ts">
+                <p>Copyright © 2022 fareedkamal</p>
+                <a href="https://github.com/fareedkamal">
+                    <div title="github.com/fareedkamal" class="git"></div>
+                </a>
+            </footer>
+            <div id="photoCredits"class="ts flex al ju">
+                <p>Photo by  </p>
+                <a id="locImgSrc" class="cg" href=""></a>
+            </div>
+            
+        </div>
+        <div class="section right flex col al">
+            <div class="header flex al ju">
+                <div>Weather</div>
+                <div>Alerts</div>
+                <div>Map</div>
+                <div>Satellite</div>
+                <div>News</div>
+            </div>
+            <div class="right-data flex col ju">
+                <div class="tl tbr">Today</div>
+                <div class="temp-card flex al">
+                    <div class="flex fit col ju ">
+                        <div class="flex al">
+                            <p id="wtemp" class="tl tbr">32°</p>
+                            <div id="wstateicon"class="clear weather-icon"></div>
+                        </div>
+                        <p id="wstate"class="tm"></p>
+                        <p id="wdate"></p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="weatherinfo" class="flex fit col ju cg">
+                        <div class="flex al"><div class="icn feels"></div><p>Feels Like:</p><span></span></div>
+                        <div class="flex al"><div class="icn perci"></div><p>Percipitation:</p><span></span></div>
+                        <div class="flex al"><div class="icn humid"></div><p>Humidity:</p><span></span></div>
+                        <div class="flex al"><div class="icn wind"></div><p>Wind Speed:</p><span></span></div>
+                    </div>
+                </div>
+                <div class="tm tbr">Daily</div>
+                <div class="wdaily-wrapper">
+                    <div id = "daily-weather" class="flex al" >
+                        <div id="dtemp" class="hide">
+                            <div class="daily-card flex col ju">
+                                <div class="flex al">
+                                    <p id="" class="tm tbr"></p>
+                                    <div id="wstateicon"class="weather-icon"></div>
+                                </div>
+                                <p class=" tms">Sunny</p>
+                                <p class="tb" >Monday 27,July '20</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="l-slide-effect"></div>
+                    <div class="r-slide-effect"></div>
+                    <div id="leftarrow" class="move tb flex al ju">&lt;</div>
+                    <div id="rightarrow"class="move tb flex al ju">&gt;</div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,450 @@
+@font-face {
+    font-family: myfont;
+    src: url(assets/fonts/Fype\ Co\ -\ LondonBridge-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(assets/fonts/Fype\ Co\ -\ LondonBridge-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: myfont;
+    src: url(assets/fonts/Fype\ Co\ -\ LondonBridge-ExtraBold.otf);
+    font-weight:900;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myfont;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.tb{
+    font-weight: bold;
+}
+.tbr{
+    font-weight: 900;
+}
+.ts {
+    font-size: 10px;
+}
+.tms {
+    font-size: 23px;
+}
+.tl {
+    font-size: 45px;
+}
+.tm {
+    font-size: 30px;
+}
+.cg{
+    color: grey;
+}
+
+.flex{
+    display: flex;
+}
+.al{
+    align-items: center;
+}
+.ju{
+    justify-content: center;
+}
+.col{
+    flex-direction: column;
+}
+
+.btn:hover {
+    background-color: #0000003b;
+    transition: ease-in 0.2s;
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: none;
+    transition: ease-out 0.4s;
+}
+
+.section {
+    height: 100%;
+}
+
+
+
+/* element specific styles */
+
+
+#content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.search-btn {
+    background-image: url(./assets/icons/icons8-search-50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+#search-container {
+    background-color: #e2e2e2;
+    border-radius: 2em;
+    padding: 9px 30px;
+}
+
+.left {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 30%);
+    position: relative;
+}
+
+.right-data {gap: 1.5em;width: 75%;}
+
+
+#search-sec {
+    transition: ease-out 0.6s;
+    background-color: #ffffff61;
+    width: 350px;
+    border-radius: 6px;
+    height: 40px;
+    padding: 0px 16px;
+    backdrop-filter: blur(3px);
+}
+#search-sec:hover {
+    box-shadow: 1px 1px 25px -10px white;
+    transition: ease-in 0.2s;
+}
+
+
+.input-field {
+    border: none;
+    background: none;
+    width: 90%;
+    height: 100%;
+    color: white;
+}
+.input-field:focus {
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.gps-btn{
+    background-image: url(./assets/icons/my_location_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+.action-area{
+    gap: 0.5em;
+}
+
+.loc-icon {
+    background-image: url(./assets/icons/location_on_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    background-position: center;
+    height: 30px;
+}
+
+.loc-show {
+    background-color: #46464694;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 10px;
+    gap: 1em;
+    position: absolute;
+    top: 1em;
+    right: 5em;
+}
+.loc-show-text {
+    gap: 5px;
+}
+
+.header{gap: 1.5em;margin-top: 1em;}
+
+.temp-card {
+    width: 400px;
+    height: 250px;
+    padding:0 2em;
+    border-radius: 1.5em;
+    box-shadow: 0px 5px 30px -19px black;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.daily-card {
+    width: 137px;
+    height: 180px;
+    padding: 0px 1em;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px -3px #0000006e;
+    justify-content: center;
+    font-size: 14px;
+    gap: 0.5em;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.dailycard-wrapper:hover .daily-card {
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.right {
+    gap: 10px;
+}
+
+.weather-icon{
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.clear-day{
+    background-image: url(./assets/icons/weather-icons-main/animated/clear-day.svg);
+}
+.rain{
+    background-image: url(./assets/icons/weather-icons-main/animated/rainy-3.svg);
+}
+.fog{
+    background-image: url(./assets/icons/weather-icons-main/animated/fog.svg);
+}
+.snow{
+    background-image: url(./assets/icons/weather-icons-main/animated/snowy-3.svg);
+}
+.wind{
+    background-image: url(./assets/icons/weather-icons-main/animated/wind.svg);
+}
+.cloudy{
+    background-image: url(./assets/icons/weather-icons-main/animated/cloudy.svg);
+}
+.partly-cloudy-day{
+    background-image: url(./assets/icons/weather-icons-main/animated/cloudy-1-day.svg);
+}
+.partly-cloudy-night{
+    background-image: url(./assets/icons/weather-icons-main/animated//cloudy-1-night.svg);
+}
+.clear-night{
+    background-image: url(./assets/icons/weather-icons-main/animated/clear-night.svg);
+}
+.snow-showers-night{
+    background-image: url(./assets/icons/weather-icons-main/animated/rain-and-snow-mix.svg);
+}
+.snow-showers-day{
+    background-image: url(./assets/icons/weather-icons-main/animated/rain-and-snow-mix.svg);
+}
+.thunder-rain{
+    background-image: url(./assets/icons/weather-icons-main/animated/severe-thunderstorm.svg);
+}
+.thunder-showers-day{
+    background-image: url(./assets/icons/weather-icons-main/animated/isolated-thunderstorms-day.svg);
+}
+.thunder-showers-night{
+    background-image: url(./assets/icons/weather-icons-main/animated/isolated-thunderstorms-night.svg);
+}
+.showers-day{
+    background-image: url(./assets/icons/weather-icons-main/animated/scattered-thunderstorms-day.svg);
+}
+.showers-night{
+    background-image: url(./assets/icons/weather-icons-main/animated/scattered-thunderstorms-night.svg);
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.error-msg-show{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    animation: fadeIn 2s;
+    background-color: rgba(0, 0, 0, 0.576);
+}
+
+.hide{
+    display: none;
+}
+
+#photoCredits {
+    position: absolute;
+    gap: 1em;
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+
+
+#weatherinfo,#weatherinfo div{
+    gap: 0.7em;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.divider {
+    height: 80%;
+    width: 9px;
+    border-radius: 3em;
+    background-color: #d5d5d5;
+    margin: 0 1.5em;
+}
+
+.fit{
+    width: 100%;
+    height: 100%;
+}
+
+.icn{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.humid{
+    background-image: url(./assets/icons/humidity.svg);
+}
+.feels{
+    background-image: url(./assets/icons/temperature-high.svg);
+}
+.perci{
+    background-image: url(./assets/icons/cloud-rain.svg);
+}
+.wind{
+    background-image: url(./assets/icons/wind.svg);
+}
+
+
+#daily-weather {
+    gap: 2em;
+    overflow-x: auto;
+    padding: 0em 2em;
+    height: 220px;
+    position: relative;
+}
+#daily-weather::-webkit-scrollbar {
+    display: none;
+}
+.wdaily-wrapper {
+    position: relative;
+    margin-top: -1em;
+    margin-left: -2em;
+}
+
+.r-slide-effect {
+    background: linear-gradient(to right,#ffffff00,white);
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.l-slide-effect {
+    background: linear-gradient(to left,#ffffff00,white);
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+p#wdate {
+    margin-top: 1em;
+}
+
+.move{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px -11px black;
+    font-size: 26px;
+    color: #0000004f;
+}
+
+.move:hover {
+    color: black;
+}
+
+#leftarrow {
+    top: 80px;
+}
+#rightarrow {
+    top: 80px;
+    right: 0;
+}
+
+.footer{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.git{
+    background-image: url(./assets/icons/github-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 2em;
+    width: 2em;
+}
